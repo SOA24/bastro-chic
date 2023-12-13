@@ -1,150 +1,157 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>forms</title>
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="principal.css">
-</head>
-<body>
-    <header id="nav_pedido" class="container-fluid " style="font-size: 2rem; font-weight: bold;">
-      <a class="navbar-brand text-white fs-1 position-relative start-50">
-        pedido
-      </a>
-    </header>
+    <head>
+        <title>Title</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
 
-    <main id="main_pedidio" class="container-fluid">
-      <article class="container-fluid col-lg-12">
-        <form>
-            <fieldset>
-                <form class="row g-3 needs-validation" novalidate>
-                    <div class="col-md-4">
-                      <label for="validationCustom01" class="form-label text-white" >Nombre</label>
-                      <input type="text" class="form-control" id="validationCustom01" value="" required>
-                      <div class="valid-feedback">
-                        Looks good!
-                      </div>
-                    </div>
-                    <div class="col-md-4 text-white">
-                      <label for="validationCustom02" class="form-label">Apellido</label>
-                      <input type="text" class="form-control" id="validationCustom02" value="" required>
-                      <div class="valid-feedback">
-                        Looks good!
-                      </div>
-                    </div>
-                    <div class="col-md-4 text-white">
-                      <label for="validationCustomUsername" class="form-label">Username</label>
-                      <div class="input-group has-validation">
-                        <span class="input-group-text" id="inputGroupPrepend">@</span>
-                        <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
-                        <div class="invalid-feedback">
-                          porfavir elija un Username
+        <!-- Bootstrap CSS v5.2.1 -->
+        <link
+            href="css/bootstrap.min.css" rel="stylesheet"/>
+        <link rel="stylesheet" href="principal.css">
+    </head>
+
+    <body>
+        <header id="nav_pedido" class="container-fluid " style="font-size: 2rem; font-weight: bold;">
+          <a class="navbar-brand text-white fs-1 position-relative start-50">
+            pedido
+          </a>
+        </header>
+    
+        <main id="main_pedidio" class="container-fluid">
+          <article class="container-fluid col-lg-12">
+            <form>
+                <fieldset>
+                    <form class="row g-3 needs-validation" novalidate>
+                        <div class="col-md-4">
+                          <label for="validationCustom01" class="form-label text-white" >Nombre</label>
+                          <input type="text" class="form-control" id="validationCustom01" value="" required>
+                          <div class="valid-feedback">
+                            Looks good!
+                          </div>
+                        </div>
+                        <div class="col-md-4 text-white">
+                          <label for="validationCustom02" class="form-label">Apellido</label>
+                          <input type="text" class="form-control" id="validationCustom02" value="" required>
+                          <div class="valid-feedback">
+                            Looks good!
+                          </div>
+                        </div>
+                        <div class="col-md-4 text-white">
+                          <label for="validationCustomUsername" class="form-label">Username</label>
+                          <div class="input-group has-validation">
+                            <span class="input-group-text" id="inputGroupPrepend">@</span>
+                            <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                            <div class="invalid-feedback">
+                              porfavir elija un Username
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-3 text-white">
+                          <label for="validationCustom03" class="form-label">City</label>
+                          <input type="text" class="form-control" id="validationCustom03" required>
+                          <div class="invalid-feedback">
+                            porfavor ponga su ciudad
+                          </div>
+                        </div>
+                        <div class="col-md-3 text-white">
+                          <label for="validationCustom04" class="form-label">State</label>
+                          <select class="form-select" id="validationCustom04" required>
+                            <option selected disabled value="">Choose...</option>
+                            <option>...</option>
+                          </select>
+                          <div class="invalid-feedback text-white">
+                            porfavor elija su provincia
+                          </div>
+                        </div>
+                        <br>
+                        <fieldset class="text-white">
+                          <label>Departamento</label>
+                          <input type="text" id="departamentos" name="departamentos" list="lista_departamentos"/>
+                          <datalist id="lista_departamentos">
+                              <option value="Sucre">
+                              <option value="Santa Cruz">
+                              <option value="La Paz ">
+                              <option value="Pando">
+                              <option value="Beni">
+                              <option value="Tarija">
+                              <option value="Potosi">
+                              <option value="Oruro">
+                              <option value="Cochabanba">
+                          </datalist>
+                  </fieldset>
+                      <br>
+                        </div>
+                        <div class="mb-3 text-white">
+                          <label for="exampleFormControlTextarea1" class="form-label">Descripcion del pedido</label>
+                          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" cols="60"></textarea>
+                        </div>
+                        <div class="mb-3 text-white">
+                          <label for="formFileMultiple" class="form-label">Carnet de identidad</label>
+                          <input class="form-control" type="file" id="formFileMultiple" multiple>
+                        </div>
+                    </fieldset>
+                    <br>
+                    <div class="col-12 text-white" >
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                          <label class="form-check-label" for="invalidCheck">
+                            Agree to terms and conditions
+                          </label>
+                          <div class="invalid-feedback">
+                            You must agree before submitting.
+                          </div>
                         </div>
                       </div>
-                    </div>
-                    <div class="col-md-3 text-white">
-                      <label for="validationCustom03" class="form-label">City</label>
-                      <input type="text" class="form-control" id="validationCustom03" required>
-                      <div class="invalid-feedback">
-                        porfavor ponga su ciudad
+                      <br>
+                      <div class="col-12 p-3">
+                        <button id="btn_pedido" class="btn text-white fs-5" type="submit">Submit form</button>
                       </div>
-                    </div>
-                    <div class="col-md-3 text-white">
-                      <label for="validationCustom04" class="form-label">State</label>
-                      <select class="form-select" id="validationCustom04" required>
-                        <option selected disabled value="">Choose...</option>
-                        <option>...</option>
-                      </select>
-                      <div class="invalid-feedback text-white">
-                        porfavor elija su provincia
-                      </div>
-                    </div>
-                    <br>
-                    <fieldset class="text-white">
-                      <label>Departamento</label>
-                      <input type="text" id="departamentos" name="departamentos" list="lista_departamentos"/>
-                      <datalist id="lista_departamentos">
-                          <option value="Sucre">
-                          <option value="Santa Cruz">
-                          <option value="La Paz ">
-                          <option value="Pando">
-                          <option value="Beni">
-                          <option value="Tarija">
-                          <option value="Potosi">
-                          <option value="Oruro">
-                          <option value="Cochabanba">
-                      </datalist>
-              </fieldset>
-                  <br>
-                    </div>
-                    <div class="mb-3 text-white">
-                      <label for="exampleFormControlTextarea1" class="form-label">Descripcion del pedido</label>
-                      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" cols="60"></textarea>
-                    </div>
-                    <div class="mb-3 text-white">
-                      <label for="formFileMultiple" class="form-label">Carnet de identidad</label>
-                      <input class="form-control" type="file" id="formFileMultiple" multiple>
-                    </div>
-                </fieldset>
-                <br>
-                <div class="col-12 text-white" >
-                    <div class="form-check">
-                      <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-                      <label class="form-check-label" for="invalidCheck">
-                        Agree to terms and conditions
-                      </label>
-                      <div class="invalid-feedback">
-                        You must agree before submitting.
-                      </div>
-                    </div>
-                  </div>
-                  <br>
-                  <div class="col-12 p-3">
-                    <button id="btn_pedido" class="btn text-white fs-5" type="submit">Submit form</button>
-                  </div>
+    
+                      </form>
+            </form>
+      </article>
+        </main>
+        <footer id="footer_pedido" class="conteiner-fluid m-0">
+    
+          <div class="codetheworld-io row">
+            
+           <div class="col">
+            <a1 href="#" style="--color: #0072b1">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a1>
+           </div>
+      
+           <div class="col">
+            <a1 href="#" style="--color: #E1306C">
+              <i class="fa-brands fa-instagram"></i>
+            </a1>
+           </div>
+      
+           <div class="col">
+            <a1 href="#" style="--color: #FF0050">
+              <i class="fa-brands fa-tiktok"></i>
+            </a1>
+           </div>
+      
+           <div class="col ">
+            <a1 href="#" style="--color: #4267B2">
+              <i class="fa-brands fa-facebook"></i>
+            </a1>
+           </div>
+      
+          </div>
+      
+        </footer>
+        <!-- Bootstrap JavaScript Libraries -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
 
-                  </form>
-        </form>
-  </article>
-    </main>
-    <footer id="footer_pedido" class="conteiner-fluid m-0">
-
-      <div class="codetheworld-io row">
-        
-       <div class="col">
-        <a1 href="#" style="--color: #0072b1">
-          <i class="fa-brands fa-linkedin-in"></i>
-        </a1>
-       </div>
-  
-       <div class="col">
-        <a1 href="#" style="--color: #E1306C">
-          <i class="fa-brands fa-instagram"></i>
-        </a1>
-       </div>
-  
-       <div class="col">
-        <a1 href="#" style="--color: #FF0050">
-          <i class="fa-brands fa-tiktok"></i>
-        </a1>
-       </div>
-  
-       <div class="col ">
-        <a1 href="#" style="--color: #4267B2">
-          <i class="fa-brands fa-facebook"></i>
-        </a1>
-       </div>
-  
-      </div>
-  
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js">
-    </script>
-  
-    <script src="/js/bootstrap.min.js">
-    </script>
-    <script src="jquery-3.7.1.js"></script>
-    <script src="js.js"></script>
-</body>
+        <script
+            src="js/bootstrap.min.js"></script>
+    </body>
 </html>
