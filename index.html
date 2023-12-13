@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Title</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="hov.css">
+  <link rel="stylesheet" href="principal.css">
+
+</head>
+<body>
+    <header id="nav_idex" class="conteiner border  " style="font-size: 1rem; font-weight: bold; ;">
+      <nav class="navbar navbar-expand-lg" >
+          <div class="container-fluid">
+            <a class="navbar-brand text-white fs-8" href="administrador.html">Bistró Chic</a>
+            <img src="imagenes/fastfood_119164.ico" style="width: 5rem;" alt="">
+            <button data="nav" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+              <ul class="navbar-nav ">
+                <li class="nav-item">
+                  <a id="bebida" class="nav-link active  fs-4 p-4" aria-current="page" href="bebida.html">BEBIDAS</a>
+                </li>
+              </ul>
+              <ul class="navbar-nav ">
+                <li class="nav-item">
+                  <a id="inicio" class="nav-link active  fs-4 p-4" aria-current="page" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">INICIO</a>
+                  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">inicio sesion</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                          </div>
+                          <div class="mb-3">
+                            <label for="exampleFormControlTextarea1" class="form-label">contraseña</label>
+                            <input type="password" class="form-control" id="exampleFormControlInput1" placeholder="HHHHHH">
+                          </div>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                          <button type="button" class="btn btn-primary" >inicio</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+          </div>
+          <nav>
+            <div class="container-fluid" >
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+              </button>                
+              <button class="btn btn-danger position-relative end-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">compras
+                  <span id="span1" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                      0
+                  </span>
+              </button>
+          </div>
+          </nav>
+              
+  </header>
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"  aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasRightLabel">Ojbetos seleccionar</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <table id="tabla" class=" table bg-transparent">
+            <thead>
+                <tr>
+                    <td>Nº</td>
+                    <td>Precio</td>
+                    <td>Descripción</td>
+                
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+        <div class="d-grid gap-2">
+            <a style="font-weight: bold;" href="formulario.html" id="btnElim" class="btn btn-primary">COMPRAR</a>                   
+        </div>
+    </div>
+</div>
+    
+  <main id="main_index" class="conteiner-fluid m-0 justify-content-center">
+      <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="imagenes/BN010.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="imagenes/tacos.avif" class="d-block w-100 " alt="...">
+            </div>
+            <div class="carousel-item">
+              <img  src="imagenes/hh.avif" class="d-block w-100 " alt="...">
+            </div>
+          </div>
+        </div>
+  
+    <section class="conteiner-fluid bg-transparent m-0">
+        <div class="row">
+          <div class="col col-12 ">
+            <h1 class="d-flex justify-content-center fs-8 text-white p-4">MENU</h1>
+          </div>
+          <div class=" d-flex justify-content-center p-3 col col-sm-12 col-md-6 col-lg-4 " >
+            <div id="opcion1" class="card border-5 " style="width: 18rem;">
+              <img id="HO" src="imagenes/hamburguesa-salud_1-1852731_20200708213833--366x256.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 id="nombre" class="card-title">HAMBURGUESA</h5>
+                <p id="Contenido" class="card-text"> de carne</p>
+                <P id="costo" class="card-text">30bs</P>
+                <a id="btnmenu1" href="#" class="btn btn-danger">pedir</a>
+              </div>
+            </div>
+          </div>
+          <div class=" d-flex justify-content-center p-3 col col-sm-12 col-md-6 col-lg-4">
+            <div id="opcion2" class="card border-5" style="width: 18rem;">
+              <img id="HO1" src="imagenes/huevo.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 id="nombre2" class="card-title">HAMBURGUESA</h5>
+                <p id="Contenido2" class="card-text">con huevo</p>
+                <p id="costo2" class="card-text">10bs</p>
+                <a id="btnmenu2" href="#" class="btn btn-danger">pedir</a>
+              </div>
+            </div>
+          </div>
+          <div class=" d-flex justify-content-center p-3 col col-sm-12 col-md-6 col-lg-4">
+            <div id="opcion3" class="card border-5" style="width: 18rem;">
+              <img id="HO2" src="imagenes/alitas.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 id="nombre3" class="card-title">pollo</h5>
+                <p id="Contenido3" class="card-text">picante</p>
+                <p id="costo3" class="card-text">25bs</p>
+                <a id="btnmenu3" href="#" class="btn btn-danger">pedir</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+
+        <div class="row">
+          <div class="d-flex justify-content-center p-3 col col-sm-12 col-md-6 col-lg-4">
+            <div id="opcion4" class="card border-5" style="width: 18rem;">
+              <img id="HO3" src="imagenes/salchi.webp" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 id="nombre4" class="card-title">SALCHIPAPA</h5>
+                <p id="Contenido4" class="card-text"> picante</p>
+                <p id="costo4" class="card-text"> 15bs</p>
+                <a id="btnmenu4" href="#" class="btn btn-danger">pedir</a>
+              </div>
+            </div>
+          </div>
+          <div class=" d-flex justify-content-center p-3 col col-sm-12 col-md-6 col-lg-4">
+            <div id="opcion5" class="card border-5" style="width: 18rem;">
+              <img id="HO4" src="imagenes/images (3).jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 id="nombre5" class="card-title">TACOS</h5>
+                <p id="Contenido5" class="card-text"> virria</p>
+                <p id="costo5" class="card-text">18bs</p>
+                <a id="btnmenu5" href="#" class="btn btn-danger">pedir</a>
+              </div>
+            </div>
+          </div>
+          <div class=" d-flex justify-content-center p-3 col col-sm-12 col-md-6 col-lg-4">
+            <div id="opcion6" class="card border-5" style="width: 18rem;">
+              <img id="HO5" src="imagenes/hamburguesa-salud_1-1852731_20200708213833--366x256.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 id="nombre6" class="card-title">HAMBURGUESA</h5>
+                <p id="Contenido6" class="card-text">especial</p>
+                <p id="costo6" class="card-text"> 35bs</p>
+                <a id="btnmenu6" href="#" class="btn btn-danger">pedir</a>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+  </main>
+  
+    <footer class="conteiner-fluid m-0">
+
+      <div class="codetheworld-io row">
+        
+       <div class="col">
+        <a1 href="#" style="--color: #0072b1">
+          <i class="fa-brands fa-linkedin-in"></i>
+        </a1>
+       </div>
+
+       <div class="col">
+        <a1 href="#" style="--color: #E1306C">
+          <i class="fa-brands fa-instagram"></i>
+        </a1>
+       </div>
+
+       <div class="col">
+        <a1 href="#" style="--color: #FF0050">
+          <i class="fa-brands fa-tiktok"></i>
+        </a1>
+       </div>
+
+       <div class="col ">
+        <a1 href="#" style="--color: #4267B2">
+          <i class="fa-brands fa-facebook"></i>
+        </a1>
+       </div>
+
+      </div>
+
+    </footer>
+
+  <!-- Bootstrap JavaScript Libraries -->
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js">
+  </script>
+
+  <script src="js/bootstrap.min.js">
+  </script>
+
+  <script src="jquery-3.7.1.js">
+  </script>
+
+  <script src="js.js">
+  </script>
+</body>
+
+</html>

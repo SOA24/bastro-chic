@@ -1,0 +1,97 @@
+@import url(https://use.fontawesome.com/releases/v6.4.2/css/all.css);
+#it{
+    background-color: #EAE2B7;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+a1{
+    margin: 0 10px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    background: #fff;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    transition: 0.5;
+    background: rgba(0, 0, 0, 0);
+    color: var(--color);
+    font-size: 2.5em;
+    -webkit-box-reflect: below 5px linear-gradient(to 
+    bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
+}
+a1:hover{
+    background: var(--color);
+    color: #050801;
+    box-shadow: 0 0 5px var(--color),
+    0 0 25px var(--color),
+    0 0 50px var(--color),
+    0 0 200px var(--color);
+}
+
+#it:hover{
+    background-color: #d0302a;
+    
+}
+
+#nav_pedido{
+    background-color: #de7e2e;
+}
+
+#main_pedidio{
+    background-color: #d0302a;
+}
+#btn_pedido{
+    background-color: #eccb6c;
+}
+#footer_pedido{
+    background-color: #eccb6c;
+}
+
+#nav_admin{
+    background-color: #de7e2e;
+}
+
+#main_admin{
+    background-color: #d0302a;
+}
+
+#footer_admin{
+    background-color: #eccb6c;
+}
+
+
+#HO{
+    transition: trasform 0,3s;
+}
+#HO1{
+    transition: trasform 0,3s;
+}
+
+#HO2{
+    transition: trasform 0,3s;
+}
+#HO3{
+    transition: trasform 0,3s;
+}
+#HO4{
+    transition: trasform 0,3s;
+}
+#HO5{
+    transition: trasform 0,3s;
+}
+
+#Ve{
+    transition: trasform 1s;
+}
+
+.selec{
+    background-color:green;
+
+}
+
+
